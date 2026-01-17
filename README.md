@@ -1,5 +1,9 @@
 # 🩺 wsbapp – Health Check API
 
+[![CI](https://github.com/AmbrogyKleks/wsbapp/actions/workflows/docker-build.yml/badge.svg)](
+https://github.com/AmbrogyKleks/wsbapp/actions/workflows/docker-build.yml
+)
+![Docker Image Version](https://img.shields.io/docker/v/m1cm0l/wsbapp)
 ![Docker Pulls](https://img.shields.io/docker/pulls/m1cm0l/wsbapp)
 ![Docker Image Size](https://img.shields.io/docker/image-size/m1cm0l/wsbapp/latest?platform=linux/arm64)
 
