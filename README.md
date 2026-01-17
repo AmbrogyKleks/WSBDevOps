@@ -1,6 +1,6 @@
 # 🩺 wsbapp – Health Check API
 
-![Docker Image](https://img.shields.io/docker/v/m1cm0l/wsbapp)
+![Docker Digest](https://img.shields.io/docker/image-digest/m1cm0l/wsbapp/1.0.1)
 ![Docker Pulls](https://img.shields.io/docker/pulls/m1cm0l/wsbapp)
 ![Docker Image Size](https://img.shields.io/docker/image-size/m1cm0l/wsbapp/latest?platform=linux/arm64)
 
