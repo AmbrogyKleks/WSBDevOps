@@ -1,17 +1,38 @@
-# wsbapp – Health Check API
+# 🩺 wsbapp – Health Check API
 
-Minimalna aplikacja Health Check do ćwiczeń z GitHub, CI/CD i Dockera.
-Aplikacja wykonana podczas ćwiczeń na kursie DevOps w WSB-NLU 2025/2026.
+Minimalna aplikacja **Health Check API**, stworzona jako **aplikacja ćwiczeniowa** do nauki:
+- Git & GitHub workflow
+- Dockera i Docker Compose
+- podstaw CI/CD
+- dobrych praktyk DevOps
 
-## Endpoint
-GET /health
-
-## Przykładowa odpowiedź
-```json
-{
-  "status": "UP",
-  "service": "wsbapp-health-api",
-  "version": "1.0.0"
-}
+Projekt celowo jest prosty funkcjonalnie, ale **poprawny architektonicznie** – dokładnie tak, jak w realnych środowiskach produkcyjnych.
 
 ---
+
+## 🎯 Cel projektu
+
+`wsbapp` służy jako **laboratorium szkoleniowe** do:
+- pracy na branchach i Pull Requestach,
+- budowania i uruchamiania aplikacji w kontenerach,
+- testowania health checków (liveness / readiness),
+- przygotowania pod CI/CD oraz Kubernetes.
+
+---
+
+## 🖼️ Architektura (uproszczona)
+
+```text
+┌─────────────┐
+│   Client    │
+└──────┬──────┘
+       │ HTTP
+       ▼
+┌──────────────────┐
+│  Flask App       │
+│  /health         │
+│  /live (future)  │
+│  /ready (future) │
+└────────┬─────────┘
+         ▼
+   Docker Container
