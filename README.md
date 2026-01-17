@@ -1,24 +1,38 @@
 # 🩺 wsbapp – Health Check API
 
-Minimalna aplikacja **Health Check API**, stworzona jako **aplikacja ćwiczeniowa** do nauki:
-- Git & GitHub workflow
-- Dockera i Docker Compose
-- podstaw CI/CD
-- dobrych praktyk DevOps
+[![CI](https://github.com/AmbrogyKleks/wsbapp/actions/workflows/docker-build.yml/badge.svg)](
+https://github.com/AmbrogyKleks/wsbapp/actions/workflows/docker-build.yml
+)
+![Docker Image](https://img.shields.io/docker/v/m1cm0l/wsbapp?label=docker%20image)
+![Docker Pulls](https://img.shields.io/docker/pulls/m1cm0l/wsbapp)
+![Docker Image Size](https://img.shields.io/docker/image-size/m1cm0l/wsbapp/latest)
 
 ---
 
-## 🎯 Cel projektu
+## 📌 Opis projektu
 
-`wsbapp` służy jako **laboratorium szkoleniowe** do:
-- pracy na branchach i Pull Requestach,
-- budowania i uruchamiania aplikacji w kontenerach,
-- testowania health checków (liveness / readiness),
-- przygotowania pod CI/CD oraz Kubernetes.
+**wsbapp** to **ćwiczeniowa aplikacja Health Check API**, stworzona w celu nauki i demonstracji:
+- pracy z **Git i GitHub** (branching, PR, workflow),
+- konteneryzacji aplikacji przy użyciu **Docker** i **Docker Compose**,
+- publikacji obrazów w **Docker Hub**,
+- podstaw **CI/CD** i dobrych praktyk DevOps.
+
+Projekt jest celowo prosty funkcjonalnie, ale **zrobiony poprawnie technicznie** – dokładnie tak, jak w realnych projektach produkcyjnych.
 
 ---
 
-## 🖼️ Architektura (uproszczona)
+## 🎯 Cel edukacyjny
+
+Repozytorium służy jako **laboratorium ćwiczeniowe**, w którym można trenować:
+
+- pełny cykl: code → build → image → registry → run,
+- debugowanie aplikacji w kontenerze,
+- health checki aplikacyjne i kontenerowe,
+- przygotowanie projektu pod CI/CD i Kubernetes.
+
+---
+
+## 🧱 Architektura (uproszczona)
 
 ```text
 ┌─────────────┐
@@ -26,11 +40,11 @@ Minimalna aplikacja **Health Check API**, stworzona jako **aplikacja ćwiczeniow
 └──────┬──────┘
        │ HTTP
        ▼
-┌──────────────────┐
-│  Flask App       │
-│  /health         │
-│  /live (future)  │
-│  /ready (future) │
-└────────┬─────────┘
+┌──────────────────────┐
+│  Flask Application   │
+│  ├─ /health          │
+│  ├─ /live (planned)  │
+│  └─ /ready (planned) │
+└────────┬─────────────┘
          ▼
    Docker Container
