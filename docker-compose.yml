@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  wsbapp:
+    image: wsbapp:1.0
+    container_name: wsbapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      SERVICE_NAME: wsbapp-health-api
+      VERSION: 1.0.0
+    restart: unless-stopped
