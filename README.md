@@ -14,8 +14,6 @@
 - publikacji obrazów w **Docker Hub**,
 - podstaw **CI/CD** i dobrych praktyk DevOps.
 
-Projekt jest celowo prosty funkcjonalnie, ale **zrobiony poprawnie technicznie** – dokładnie tak, jak w realnych projektach produkcyjnych.
-
 ---
 
 ## 🎯 Cel edukacyjny
