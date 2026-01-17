@@ -6,8 +6,6 @@ Minimalna aplikacja **Health Check API**, stworzona jako **aplikacja ćwiczeniow
 - podstaw CI/CD
 - dobrych praktyk DevOps
 
-Projekt celowo jest prosty funkcjonalnie, ale **poprawny architektonicznie** – dokładnie tak, jak w realnych środowiskach produkcyjnych.
-
 ---
 
 ## 🎯 Cel projektu
